@@ -1,17 +1,17 @@
 # Promise vs Async await
     https://plainenglish.io/blog/differences-between-promises-and-async-await-in-javascript
     
-    Both Promises and async/await are ways to handle asynchronous operations in JavaScript. They have different syntax
+> #### Both Promises and async/await are ways to handle asynchronous operations in JavaScript. They have different syntax
 
-    Promises:
-        Promises are objects that represent the eventual completion (or failure) of an asynchronous operation.
-        Promises are created using the new Promise() constructor.
-        Promises can be chained together using the then() and catch() methods.
+> -    Promises:
+>        Promises are objects that represent the eventual completion (or failure) of an asynchronous operation.
+>        Promises are created using the new Promise() constructor.
+>        Promises can be chained together using the then() and catch() methods.
 
-    Async/await:
-        Async/await is a syntax sugar for Promises.
-        Async functions are functions that are marked with the async keyword.
-        Await expressions are expressions that are preceded by the await keyword.
+> -   Async/await:
+>        Async/await is a syntax sugar for Promises.
+>        Async functions are functions that are marked with the async keyword.
+>        Await expressions are expressions that are preceded by the await keyword.
 
         ```javascript
         const fetchData = (url) => {
@@ -31,8 +31,6 @@
         fetchData('https://jsonplaceholder.typicode.com/todos/1')
             .then((data) => console.log(data))
             .catch((error) => console.error(error));
-
-
         ```
 
         ```javascript
