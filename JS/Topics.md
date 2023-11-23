@@ -13,7 +13,7 @@
 >        Async functions are functions that are marked with the async keyword.
 >        Await expressions are expressions that are preceded by the await keyword.
 
-        ```javascript
+        ```js
         const fetchData = (url) => {
             return new Promise((resolve, reject) => {
                 fetch(url)
@@ -33,7 +33,7 @@
             .catch((error) => console.error(error));
         ```
 
-        ```javascript
+        ```js
         const fetchData = async (url) => {
             const response = await fetch(url);
             if (!response.ok) {
