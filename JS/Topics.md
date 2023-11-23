@@ -13,7 +13,7 @@
         Async functions are functions that are marked with the async keyword.
         Await expressions are expressions that are preceded by the await keyword.
 
-        ```
+        ```javascript
         const fetchData = (url) => {
             return new Promise((resolve, reject) => {
                 fetch(url)
@@ -35,7 +35,7 @@
 
         ```
 
-        ```
+        ```javascript
         const fetchData = async (url) => {
             const response = await fetch(url);
             if (!response.ok) {
@@ -54,6 +54,9 @@
                 console.error(error);
             }
         })();
-
-
         ```
+
+> #### Error handling
+> With Promises, error handling is typically done using the catch() method. The catch() method is called when the Promise is rejected
+
+> With async/await, error handling is typically done using a try/catch block. The try block contains the asynchronous operation that you want to execute, and the catch block handles any errors that occur.
